@@ -1,0 +1,1 @@
+To install MateR, please download the BinaryVersions folder. Go to the one corresponding to your operating system and R version. Then, run the script "install.R"
