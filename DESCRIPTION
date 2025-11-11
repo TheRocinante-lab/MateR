@@ -1,0 +1,17 @@
+Package: MateR
+Type: Package
+Title: Enhanced Genomic Mating
+Version: 1.1.0
+Author: Javier Fernandez-Gonzalez, Julio Isidro y Sanchez, Seifelden Metwally
+Maintainer: <javfer98@gmail.com>
+Description: Genomic Mating package. Use genomic information optimize a mating plan, maximizing genetic gain and within family variance (usefulness), as well as genetic diversity. Supports polyploids, multi-trait optimization, additive and dominance effects, directional dominance (inbreeding and heterosis) and the use of testers.
+Imports: 
+	doParallel, 
+	foreach, 
+	TrainSel,
+	Matrix,
+	httr,
+	jsonlite
+License: See LICENSE file
+Encoding: UTF-8
+LazyData: true
