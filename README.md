@@ -6,6 +6,11 @@ Genomic Mating package. Optimize mating plans using genomic information to maxim
 
 Documentation and examples of MateR usage are available in the Vignette.
 
+<br>
+
+<br>
+
+
 ## Installation
 
 Please, see Installation.txt for instructions on how to install MateR.
