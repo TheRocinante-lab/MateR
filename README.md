@@ -1,7 +1,7 @@
 # MateR
  
 <img src="images/Hex_MtR.png" alt="MateR hex sticker"
-     style="width:300px;height:auto;" align="right" />
+     style="width:200px;height:auto;" align="right" />
 Genomic Mating package. Optimize mating plans using genomic information to maximize genetic gain, within-family variance, and genetic diversity. Supports polyploids, multi-trait optimization, additive and dominance effects, directional dominance (inbreeding and heterosis), and testers.
 
 Documentation and examples of MateR usage are available in the Vignette.
