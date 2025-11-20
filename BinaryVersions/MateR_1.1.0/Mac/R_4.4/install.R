@@ -20,6 +20,6 @@ if (!("TrainSel" %in% installed.packages()[,"Package"])) {
 
 
 #Install MateR package itself
-install.packages("./MateR_1.1.0.zip", repos = NULL, type = "binary")
+install.packages("./MateR_1.1.0.tgz", repos = NULL, type = "binary")
 library(MateR)
 ?GenomicMatingMT
