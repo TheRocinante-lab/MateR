@@ -13,9 +13,19 @@ Documentation and examples of MateR usage are available in the Vignette.
 
 ## Installation
 
-Please, see Installation.txt for instructions on how to install MateR.
+First, make sure you have the TrainSel package installed. More details in https://github.com/TheRocinante-lab/TrainSel
 
-Make sure you have the TrainSel package installed. More details in https://github.com/TheRocinante-lab/TrainSel
+To install MateR:
+
+1) Download the repository
+
+2) Go to the BinaryVersions folder. 
+
+3) Go to the subdirectory corresponding to the latest versión
+
+4) Go to the subdirectory corresponding to your operating system and R version. 
+
+5) Run the script "install.R".
 
 ## Citation: 
 
