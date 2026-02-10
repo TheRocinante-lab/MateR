@@ -28,5 +28,5 @@ To install MateR:
 5) Run the script "install.R".
 
 ## Citation: 
-
-Fernandez-Gonzalez, J., Metwally, S. M., & Isidro y Sanchez, J. (2025). MateR: a novel framework for computing the usefulness criterion and applying genomic mating. bioRxiv, 2025-09.
+Check paper: https://doi.org/10.1093/genetics/iyag013
+Javier Fernández-González, Seifelden M Metwally, Julio Isidro y Sánchez, MateR: a novel genomic mating framework, Genetics, 2026.
