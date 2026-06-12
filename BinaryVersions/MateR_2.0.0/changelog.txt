@@ -1,0 +1,15 @@
+1) Major updates:
+
+1.1) Greedy algorithm
+We introduced a new optimization algorithm ("Greedy") as an alternative to TrainSel in the GenomicMatingMT function. To use it, simply set opt_type = "Greedy" in the arguments of the function. This algorithm starts with the family with the highest fitness, and iteratively introduces into the mating plan the next best family that meets all constraints (including the diversity constraint). It is much faster than TraniSel, although by its nature it has a strong tendency to get stuck in a local optimum. As a result, it usually performs slightly worse than TrainSel. We recommend it for very large optimization problems, in which TrainSel may become non-viable due to computational time and when many constraints are introduced (e.g., simultaneously determining the exact number of families with replication enabled and setting limits to the maximum and minimum number of times each parents can be used). For these very complex optimization scenarios, TrainSel can struggle, and the greedy algorithm may become better.
+
+Please note that, at the time of writing, TrainSel is incompatible with R version 4.5 due to problems with the dependencies. The implementation of the Greedy algorithm allows to bypass this problem, as it only relies on base R and can therefore run without issues in R 4.5.
+
+1.2) Reference population
+We implemented an optional reference population for diversity computation in the function GenomicMatingMT(). If provided, PropSD will refer to the reduction in additive variance in the selected parents of the mating plan relative to the reference population instead of computing it relative to the entire pool of candidates. 
+
+2) Minor changes:
+2.1) We uptadted the citation to the paper
+2.2) We modified the compute_i function to return 0 instead of NA when the proportion of individuals selected is above 1
+2.3) We introduced the "n_progeny_selected" in GenomicMatingMT. It can be used as an alternative to "n_selected_per_family". The latter had the disadvantage that it resulted in a variable number of total progeny selected depending on the number of families of the mating plan. Using "n_progeny_selected" allows to directly determine the total number of progeny selected regardless of the number of families. Internally, MateR will assume that this number will be divided equally among all families of the mating plan.
+2.4) Initial solutions: we added the "initsol" argument in the GenomicMatingMT() function, allowing to specify initial solutions for the TrainSel optimization.
