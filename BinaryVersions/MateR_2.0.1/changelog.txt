@@ -1,0 +1,7 @@
+1) Minor updates:
+
+Fixed issue where selection intensity and Alpha were not computed in GenomicMatingMT() when FamilyValues were provided and coefficients = NULL
+
+Fixed typo in the example data ExampleMatingPlan: the object GenomicMatingOtput was renamed to GenomicMatingOutput
+
+Minor bug fixes
