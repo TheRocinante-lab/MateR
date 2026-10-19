@@ -24,6 +24,6 @@ if (!("TrainSel" %in% installed.packages()[,"Package"])) {
 
 
 #Install MateR package itself
-install.packages("MateR_2.0.0.tgz", repos = NULL, type = "binary")
+install.packages("MateR_2.0.1.tgz", repos = NULL, type = "binary")
 library(MateR)
 library(TrainSel)
